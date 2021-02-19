@@ -27,11 +27,8 @@ jobs:
 
    
     - uses: mr-smithers-excellent/docker-build-push@v5
-    - name: Build & push Docker image
       with:
         image: uvindu96/java-ci-cd
-        tags: v2
         registry: docker.io
-        dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
