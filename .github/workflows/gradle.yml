@@ -26,8 +26,8 @@ jobs:
       run: ./gradlew build
 
 
-    - name: Build and push Docker Image
     - uses: mr-smithers-excellent/docker-build-push@v4
+    - name: Build and push Docker Image
       with:
         image: uvindu96/java-ci-cd
         registry: docker.io
