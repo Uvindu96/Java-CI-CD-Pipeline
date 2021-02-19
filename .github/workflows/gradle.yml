@@ -24,7 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-
+    - uses: actions/checkout@v2
+      name: Check out code
     - uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: uvindu96/java-ci-cd
